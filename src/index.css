@@ -253,3 +253,75 @@ ul {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
+
+.menu {
+  margin: 5rem auto;
+}
+
+.btn-container {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-center {
+  width: 90vw;
+  max-width: var(--max-width);
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.menu-item {
+  max-width: 25rem;
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+  background-color: var(--white);
+}
+
+.menu-item img {
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+}
+
+.item-info header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+header p {
+  line-height: 1.7;
+  color: var(--grey-600);
+}
+
+header h5 {
+  color: var(--black);
+  font-weight: 700;
+}
+
+.item-price {
+  background-color: var(--primary-500);
+  padding: 0.3rem 1rem;
+  border-radius: var(--borderRadius);
+  color: var(--white);
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .section-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

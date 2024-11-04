@@ -6,6 +6,7 @@ function MenuItem({ img, title, price, desc }) {
         <header>
           <h5>{title}</h5>
           <span className="item-price">${price}</span>
+          <p className="item-text">{desc}</p>
         </header>
       </div>
     </article>
