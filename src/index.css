@@ -262,7 +262,7 @@ ul {
   padding: 3rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .section-center {
@@ -277,14 +277,14 @@ ul {
 
 .menu-item {
   max-width: 25rem;
-  border-top-left-radius: var(--borderRadius);
-  border-top-right-radius: var(--borderRadius);
+  border-radius: var(--borderRadius);
   background-color: var(--white);
 }
 
-.menu-item img {
+.menu-item .img {
   border-top-left-radius: var(--borderRadius);
   border-top-right-radius: var(--borderRadius);
+  height: 15rem;
 }
 
 .item-info header {
@@ -303,7 +303,7 @@ header p {
 
 header h5 {
   color: var(--black);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .item-price {
@@ -311,6 +311,7 @@ header h5 {
   padding: 0.3rem 1rem;
   border-radius: var(--borderRadius);
   color: var(--white);
+  letter-spacing: var(--letterSpacing);
 }
 
 @media screen and (min-width: 992px) {
@@ -323,5 +324,6 @@ header h5 {
 @media screen and (min-width: 1170px) {
   .section-center {
     grid-template-columns: repeat(3, 1fr);
+    width: 95vw;
   }
 }
